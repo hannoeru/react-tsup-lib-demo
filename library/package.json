@@ -11,10 +11,14 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "unbuild"
+    "build": "tsup",
+    "dev": "tsup --watch"
   },
   "devDependencies": {
     "react": "^17.0.2",
-    "unbuild": "^0.6.3"
+    "tsup": "^5.10.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2"
   }
 }

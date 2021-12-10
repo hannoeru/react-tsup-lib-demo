@@ -1,6 +1,6 @@
-import React, { FC, useState } from 'react'
+import React, { VFC, useState } from 'react'
 
-const Counter: FC = () => {
+const Counter: VFC = () => {
   const [count, setCount] = useState(0)
   return (
     <button onClick={() => setCount(count => count + 1)}>
